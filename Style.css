@@ -1,0 +1,40 @@
+h3 {
+    color: #c100f7;
+    text-align: right;
+  }
+#about {
+    color:#f73100;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    }
+#body {
+    background-image: linear-gradient(rgba(255,255,255,.9), rgba(255, 255, 255, 0.99)),url("fon-16357.jpeg");
+    background-size: cover;
+    }
+#contact  {
+    color: rgb(227, 173, 11);
+    text-align: left;
+    font-family: Chilanka;
+}
+h2{
+    color: coral;
+    text-align: center;
+    font-family: "Abyssinica SIL";
+}
+.body{
+    background: white;
+    color: #000000;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+#boat {
+    margin-left: 0;
+    cursor: pointer;
+    transition: margin-left 3s ease-in-out;
+}
+
+/* flipping the picture with CSS */
+.back {
+    transform: scaleX(-1);
+    filter: fliph;
+}

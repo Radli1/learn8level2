@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link href="NaviMenu.css" rel="stylesheet" type="text/css">
+      <nav class="menu">
+          <ul>
+              <li><a href="Main.html">Main</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Slider.html">Moments</a></li>
+          </ul>
+      </nav>
+      <link rel="stylesheet" href="Style.css">
+      <title>Main</title>
+      <script src="scrypt_slider.js"></script>
+
+
+  </head>
+
+    <body>
+    <div>
+       <img src="https://js.cx/clipart/boat.png" id="boat">
+
+        <script>
+            boat.onclick = function() {
+
+                this.onclick = null;
+                let times = 1;
+                function go() {
+                    if (times % 2) {
+                        boat.classList.remove('back');
+                        boat.style.marginLeft = 100 * times + 200 + 'px';
+                    } else {
+                        boat.classList.add('back');
+                        boat.style.marginLeft = 100 * times - 200 + 'px';
+                    }
+
+                }
+                go();
+                boat.addEventListener('transitionend', function() {
+                    times++;
+                    go();
+                });
+            }
+        </script>
+
+    </div>
+
+    </body>
+
+</html>
